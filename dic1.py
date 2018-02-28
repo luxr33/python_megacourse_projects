@@ -4,13 +4,15 @@ data = json.load(open("data.json"))
 j=0
 
 
-def checkcity(word):
+def checkstrange(word):
 
 
-    if w.title() in data:
-        return data[w.title()]    
+    if word.title() in data:
+        return data[word.title()]
+    elif word.upper() in data:
+        return data[word.upper()
     else:
-        return 0
+         return 0
 
 def translate(word):
 
