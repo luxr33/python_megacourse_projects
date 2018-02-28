@@ -7,11 +7,10 @@ j=0
 def checkcity(word):
 
 
-    if word[0] == word[0].upper() and word[1:] == word[1:].lower():
-        if word in data:
-            return data[word]
-        else:
-            return 0
+    if w.title() in data:
+        return data[w.title()]    
+    else:
+        return 0
 
 def translate(word):
 
